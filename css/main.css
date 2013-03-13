@@ -50,6 +50,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* Clearfix */
+.cf:before,.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
 /* ---------------------
     HEADER
  --------------------- */
@@ -79,9 +92,52 @@ table {
 	-moz-border-image:url(../img/border1.png) 30  round;
 	border-image:url(../img/border1.png) 30  round;
 }
-
+/* Base*/
 body {
-background-color: #333;
+	background-color: #333;
+	margin: 0 auto;
+    width: 960px;
+    font: 16px/1.5 normal Helvetica, Arial, Sans-serif;
+}
+/* Default margin-bottom to 1.5 of font-size */
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,iframe,
+blockquote,address,table,fieldset,figure,pre,
+.form-fields>li,hgroup {
+	margin-top: 0;
+	margin-bottom: 24px;
+	margin-bottom: 1.5rem
+}
+
+/* Section styles */
+.primary-content {
+    display: inline-block;
+    width: 640px;
+    float: left;
+}
+
+.sidebar {
+    display: inline-block;
+    width: 300;
+    float: right;
+}
+
+/* Other */
+.events td {
+    width: 150px;
+}
+.events tr:nth-of-type(even) {
+    background: #eee;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+.newsfeed li {
+    background: #efefef;
+}
+
+.footer {
+    font-size: 0.8rem;
 }
 /* ---------------------
     NAVI MENUE
