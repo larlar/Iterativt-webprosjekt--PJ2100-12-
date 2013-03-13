@@ -1,0 +1,141 @@
+/* ---------------------
+    RESET AND SET DEFAULTS
+ --------------------- */
+ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------------------
+    HEADER
+ --------------------- */
+#top {
+    width: 100%;
+    font-size: 0;
+}
+#top > div {
+    margin: 0 auto;
+}
+#top > div > img {
+    height: 132px;
+}
+/* ---------------------
+    MAIN CONTENT/Layout
+ --------------------- */
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+	border-top: 0px;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	-webkit-border-image:url(../img/border1.png) 30  round;
+	-moz-border-image:url(../img/border1.png) 30  round;
+	border-image:url(../img/border1.png) 30  round;
+}
+
+body {
+background-color: #333;
+}
+/* ---------------------
+    NAVI MENUE
+ --------------------- */
+.navi-top ul {
+	display: block;
+	height: 34px;
+	width: 960px;
+	clear: both;
+	margin: 0 auto;
+
+	background: #c4d450; /* Old browsers */
+	background: -moz-linear-gradient(top, #c4d450 0%, #adbe22 20%, #97ac09 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4d450), color-stop(20%,#adbe22), color-stop(100%,#97ac09)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c4d450 0%,#adbe22 20%,#97ac09 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c4d450 0%,#adbe22 20%,#97ac09 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c4d450 0%,#adbe22 20%,#97ac09 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c4d450 0%,#adbe22 20%,#97ac09 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d450', endColorstr='#97ac09',GradientType=0 ); /* IE6-9 */
+}
+
+.navi-top li {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.navi-top a {
+	color: $colorBG;
+	padding: 6px 7px;
+	border: none;
+}
+.navi-top a:hover {
+	background: #b2c641; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b2c641 0%, #9cb018 20%, #8ea10a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2c641), color-stop(20%,#9cb018), color-stop(100%,#8ea10a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b2c641 0%,#9cb018 20%,#8ea10a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b2c641 0%,#9cb018 20%,#8ea10a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b2c641 0%,#9cb018 20%,#8ea10a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b2c641 0%,#9cb018 20%,#8ea10a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2c641', endColorstr='#8ea10a',GradientType=0 ); /* IE6-9 */
+	border: none;
+}
+
+.navi-object {
+	float: left;
+}
+
+.search {
+	float: right;
+	margin-right: 1rem;
+}
+
+.search input {
+	font-size: $fontSize*0.9;
+	margin: 0;
+	padding: 0;
+}
