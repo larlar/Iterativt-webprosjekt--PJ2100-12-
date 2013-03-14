@@ -11,17 +11,17 @@
     <div id="wrapper">
 <!-- Banner Top -->
 	<header id="top">
-		<div><img src="img/header.jpg" alt="banner top"/></div>
+		<div><img src="img/header_nordic1.jpg" alt="banner top"/></div>
 	</header>
 
 <!-- navi menue top -->
 	<div class="navi-top cf">
     <ul>
-        <li class="navi-object Home"><a href="results">Home</a></li>
-        <li class="navi-object About"><a href="#">About</a></li>
-        <li class="navi-object Dare Teams"><a href="#">Dare Teams</a></li>
-        <li class="navi-object Apply"><a href="#">Apply</a></li>
-		<li class="navi-object Contact"><a href="#">Contact</a></li>
+        <li class="navi-object Home"><a href="index.html">Home</a></li>
+        <li class="navi-object About"><a href="about.html">About</a></li>
+        <li class="navi-object Dare Teams"><a href="dareteams.html">Dare Teams</a></li>
+        <li class="navi-object Apply"><a href="apply.html">Apply</a></li>
+		<li class="navi-object Contact"><a href="contact.html">Contact</a></li>
         <li class="search"><form >
             <input type="text" />
                 <button class="submit">Go</button>
@@ -35,8 +35,6 @@
 	</center>
 	<div class="content cf">
 		<div class="primary-content">
-		
-			
             <p>Do you like to play video games? Are you serious about designing video games? If so, you've come to the right place. Not only will you get to design and build your dream game but we'll host your team in well equipped computer labs and you'll also receive funding and mentor support to help make it happen</p>
 			<p>Dare to be Digital is an internationally renowned proving ground for talented computer science and art students to design their own original video game.</p>
 			<h2>News</h2>
@@ -78,10 +76,13 @@
 	            </table>
 	        </div><!-- events end -->
             <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FDareNordic&amp;width=150&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false&amp;appId=383178455112964" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:258px;" allowTransparency="true"></iframe>
-	    </div><!-- sidebar end -->
+		</div><!-- sidebar end -->
 	</div><!-- content end -->
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae obcaecati expedita ab odit quod natus error. A fugiat facilis magni suscipit sunt necessitatibus accusamus impedit distinctio possimus cupiditate ducimus dolor.</p>
-    </div><!-- wrapper end -->
+			<a href="http://www.daretobedigital.com/d2bd/login-or-register/login.php?accesscheck=apply-2013">
+    <img src="img/applynow.jpg" alt="apply now"/> 
+	</a>
+	</div><!-- wrapper end -->
 	
 	<!-- footer wraper -->
 	<div class="footer">
