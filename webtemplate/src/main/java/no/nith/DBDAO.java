@@ -19,6 +19,8 @@ public class DBDAO {
 				try {
 					Connection connection = DriverManager.getConnection(SQLDetails.url, SQLDetails.user, SQLDetails.password);
 					
+					//MySQL spørring som henter ut informasjon fra 4 tabeller. Slår opp country_ID i country tabellen
+					//role_ID i roles tabellen og team_ID i teams tabellen
 					String sql = "select LastName, FirstName, Email, r.Role, c.Country as Country, t.team_name as Team " +
 							"from members as m " +
 							"join roles as r on r.role_ID = m.role_ID " +
@@ -50,56 +52,50 @@ public class DBDAO {
 				}
 			
 	
-//	public List<UsersDB> getUsers(String query) {
-//		List<UsersDB> users = new ArrayList<UsersDB>();
-//		String url = "jdbc:mysql://localhost/daredigital";
-//		String user = "daredig";
-//		String password = "D4repass";
-//		
-//		try {
-//			java.sql.Connection connection = DriverManager.getConnection(url, user, password);
-//			
-//			
-//			String sql = "SELECT FROM teams WHERE teamName LIKE ? ORDER BY teamID";
-//			PreparedStatement statement = connection.prepareStatement(sql);
-//			
-//			statement.setString(1, query);
-//			
-//			ResultSet resultater = statement.executeQuery();
-//			
-//			while(resultater.next()) {
-//				String teamName = resultater.getString("teamName");
-//				
-//				users.add(new UsersDB(teamName, teamName, teamName));
-//			}
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		return users;
-//	}
+	public List<Users> getUsers(String query) {
+		List<Users> users = new ArrayList<Users>();
+		String url = "jdbc:mysql://localhost/daredigital";
+		String user = "daredig";
+		String password = "D4repass";
+		
+		try {
+			java.sql.Connection connection = DriverManager.getConnection(url, user, password);
+			
+			
+			String sql = "SELECT FROM teams WHERE teamName LIKE ? ORDER BY teamID";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			statement.setString(1, query);
+			
+			ResultSet resultater = statement.executeQuery();
+			
+			while(resultater.next()) {
+				String teamName = resultater.getString("teamName");
+				
+				users.add(new Users(teamName, teamName, teamName, teamName, teamName, teamName));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return users;
+	}
+	public void insertBook(String firstName) {
 	
-//public void insertBook(String firstName) {
-//		
-//		// Databasetilkobling
-//		String url = "jdbc:mysql://localhost/daredigital";
-//		String username = "daredig";
-//		String password = "D4repass"; 
-//		
-//		// Kobler til db
-//		try {
-//			java.sql.Connection connection =
-//					DriverManager.getConnection(url, username, password);
-//			
-//			String sql = "INSERT INTO members (firstName) VALUES (?);";
-//			PreparedStatement statement = connection.prepareStatement(sql);
-//			
-//			statement.setString(1, firstName);
-//			
-//			statement.executeUpdate();
-//			
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//	}
+		// Kobler til db
+		try {
+			java.sql.Connection connection =
+					DriverManager.getConnection(SQLDetails.url, SQLDetails.user, SQLDetails.password);
+			
+			String sql = "INSERT INTO members (firstName) VALUES (?);";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			statement.setString(1, firstName);
+			
+			statement.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }
 
