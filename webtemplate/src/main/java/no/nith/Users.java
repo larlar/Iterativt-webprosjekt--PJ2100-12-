@@ -7,25 +7,28 @@ public class Users {
 	private String firstName;
 	private String lastName;
 	private String email;
-	private int country;
-	private int groupName;
+	private String country;
+	private String groupName;
+	private String roleName;
 	
 	//Constructor to set default values
 	public Users() {
 		firstName = "";
 		lastName = "";
 		email = "";
-		country = 0;
-		groupName = 0;
+		country = "";
+		groupName = "";
+		roleName = "";
 	}
 	
 	//Constructor to set values to the private variables
-	public Users(String firstName, String lastName, String eMail, int country, int groupName) {
+	public Users(String firstName, String lastName, String eMail, String country, String groupName, String roleName) {
 		setFirstName(firstName);
 		setLastName(lastName);
 		setEmail(eMail);
 		setCountry(country);
 		setGroupName(groupName);
+		setRole(roleName);
 	}
 	//Set methods for firstName
 	public void setFirstName(String firstName) {
@@ -42,13 +45,18 @@ public class Users {
 	}
 	
 	//set method for country
-	public void setCountry(int country) {
+	public void setCountry(String country) {
 		this.country = country;
 	}
 	
 	//set method for groupName
-	public void setGroupName (int groupName) {
+	public void setGroupName (String groupName) {
 		this.groupName = groupName;
+	}
+	
+	//set method for roles
+	public void setRole (String roleName) {
+		this.roleName = roleName;
 	}
 	
 	//get method for FirstName | in html JSP this has the variable name: firstName
@@ -67,15 +75,17 @@ public class Users {
 	}
 	
 	//get method for Country | in html JSP this has the variable name: country
-	public int getCountry() {
+	public String getCountry() {
 		return this.country;
 	}
 	//get method for groupname | in html JSP this has the variable name: groupName
-	public int getGroupName () {
+	public String getGroupName () {
 		return this.groupName;
 	}
 	
-	
-	
+	//get method for roleName | in html JSP this has the variable name: role
+	public String getRole () {
+		return this.roleName;
+	}
 	
 }
