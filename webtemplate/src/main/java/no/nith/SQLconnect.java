@@ -19,12 +19,14 @@ import com.mysql.jdbc.Connection;
 
 public class SQLconnect {
 	public static void Main(String[] args) {
-	String url = "jdbc://localhost/daredigital";
+	String url = "jdbc:mysql://localhost/daredigital";
+	
+	// Bruker og passord til databasen, må endres på stedene det settes opp, eller scriptes til å settes på db-server
 	
 	String user = "daredig";
 	String password = "D4repass"; {
 	
-		if(true) {
+		
 			try {
 				java.sql.Connection connection = DriverManager.getConnection(url, user, password);
 				
@@ -50,4 +52,3 @@ public class SQLconnect {
 			}
 		}
 	}
-}

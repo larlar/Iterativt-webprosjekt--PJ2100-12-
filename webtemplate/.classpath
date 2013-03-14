@@ -28,7 +28,6 @@
 	<classpathentry kind="var" path="M2_REPO/org/eclipse/jetty/orbit/org.objectweb.asm/3.1.0.v200803061910/org.objectweb.asm-3.1.0.v200803061910.jar"/>
 	<classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.18/mysql-connector-java-5.1.18.jar"/>
 	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
-	<classpathentry kind="lib" path="/usr/lib/java/swt-gtk-3.8.0.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/java"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

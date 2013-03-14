@@ -6,6 +6,7 @@ import org.eclipse.jetty.webapp.WebAppContext;
 /**
  * Kjør denne som en vanlig java-klasse, i debug modus.
  */
+
 public final class JettyStarter {
 
     private static Server SERVER;
