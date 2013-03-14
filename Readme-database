@@ -1,0 +1,8 @@
+For å sette opp databasen trenger vi å importere .sql-filen inn i mysql på servermaskinen.
+Dette kan gjøres ved å opprette databasen daredigital i MySQL, og så legge til daredigital.sql i denne.
+Se dokumentasjon hos MySQL for hvordan man importerer databaser.
+
+Det kreves at maskinen har java, jetty, og mysql-jdbc installert på systemet. 
+
+
+Søkefunksjonen fungerer ikke for øyeblikket, ei heller insert, på grunn av problemer med selve queriet
