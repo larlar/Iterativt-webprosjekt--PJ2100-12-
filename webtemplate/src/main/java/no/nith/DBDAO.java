@@ -17,6 +17,7 @@ public class DBDAO {
 				
 				//SQLDetails refererer til en klasse som inneholder url, brukernavn og passord for MySQL tilkoblingen
 				try {
+					Class.forName("com.mysql.jdbc.Driver");
 					Connection connection = DriverManager.getConnection(SQLDetails.url, SQLDetails.user, SQLDetails.password);
 					
 					//MySQL spørring som henter ut informasjon fra 4 tabeller. Slår opp country_ID i country tabellen
