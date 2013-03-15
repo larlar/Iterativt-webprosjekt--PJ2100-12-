@@ -7,6 +7,8 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+
 <!-- Content wrapper -->
     <div id="wrapper">
 <!-- Banner Top -->
@@ -19,7 +21,7 @@
     <ul>
         <li class="navi-object Home"><a href="index.html">Home</a></li>
         <li class="navi-object About"><a href="about.html">About</a></li>
-        <li class="navi-object Dare Teams"><a href="dareteams.html">Dare Teams</a></li>
+        <li class="navi-object Dare Members"><a href="/members">Dare Members</a></li>
         <li class="navi-object Apply"><a href="apply.html">Apply</a></li>
 		<li class="navi-object Contact"><a href="contact.html">Contact</a></li>
         <li class="search"><form >
@@ -29,23 +31,26 @@
     </ul>
 </div>
 	
-    <!-- youtube link-->   
-	<center class="video-preview">
+    <!-- youtube link-->   <br>
+	<left class="video-preview">
 	    <iframe width="560" height="315" src="http://www.youtube.com/embed/7r63s5dVTlA" frameborder="0" allowfullscreen></iframe>
-	</center>
+	</left>
 	<div class="content cf">
 		<div class="primary-content">
             <p>Do you like to play video games? Are you serious about designing video games? If so, you've come to the right place. Not only will you get to design and build your dream game but we'll host your team in well equipped computer labs and you'll also receive funding and mentor support to help make it happen</p>
 			<p>Dare to be Digital is an internationally renowned proving ground for talented computer science and art students to design their own original video game.</p>
-			<h2>News</h2>
+		<h2>News</h2>	
+		<div id="newsbox">
             <ul class="newsfeed">
-                <li><p>Lorem ipsum dolor sit amet</p> <p>consectetur adipisicing elit. Eveniet dolores eius aspernatur iste animi fuga dolorem <a href="#">reprehenderit labore</a> assumenda placeat corrupti vero optio soluta vitae maiores tempora magnam est eaque.</p></li>
+                <li><p>consectetur adipisicing elit. Eveniet dolores eius aspernatur iste animi fuga dolorem <a href="#">reprehenderit labore</a> assumenda placeat corrupti vero optio soluta vitae maiores tempora magnam est eaque.</p></li>
                 <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis necessitatibus beatae culpa at iusto nesciunt ut dignissimos incidunt cupiditate veniam voluptate omnis cum labore adipisci ipsam aliquid deleniti nisi placeat.</p></li>
                 <li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nesciunt facere molestiae</p> <p>voluptates fugiat laboriosam neque consectetur accusamus nam atque. Accusamus repellat sapiente eaque soluta dolor non excepturi perspiciatis neque.</p></li>
             </ul>
+		</div>
             
 	    </div>
 	    <div class="sidebar">
+
 	        <div class="events">
                 <h2>Key Dates</h2>
 	            <table>
@@ -74,19 +79,21 @@
 	                    <td>8 - 11 Aug</td>
 	                </tr>
 	            </table>
+			
 	        </div><!-- events end -->
-            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FDareNordic&amp;width=150&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false&amp;appId=383178455112964" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:258px;" allowTransparency="true"></iframe>
 		</div><!-- sidebar end -->
+			
+			
 	</div><!-- content end -->
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae obcaecati expedita ab odit quod natus error. A fugiat facilis magni suscipit sunt necessitatibus accusamus impedit distinctio possimus cupiditate ducimus dolor.</p>
 			<a href="http://www.daretobedigital.com/d2bd/login-or-register/login.php?accesscheck=apply-2013">
-    <img src="img/applynow.jpg" alt="apply now"/> 
+    <img src="img/applynow.jpg" alt="apply now">
 	</a>
 	</div><!-- wrapper end -->
 	
 	<!-- footer wraper -->
 	<div class="footer">
-		<center>All images, videos, content Copyright © 2013 Dare to be Digital Limited except where noted. All Rights Reserved. <a href="mailto:enquiries@daretobedigital.com">enquiries@daretobedigital.com</a> <br />
+		<center>All images, videos, content Copyright Â© 2013 Dare to be Digital Limited except where noted. All Rights Reserved. <a href="mailto:enquiries@daretobedigital.com">enquiries@daretobedigital.com</a> <br />
 		Website Design by MTC Media | Dare 2011 illustrations by Sooper Double D</center>
 	</div><!-- footer end -->
 	

@@ -108,33 +108,78 @@ blockquote,address,table,fieldset,figure,pre,
 	margin-bottom: 1.5rem
 }
 
+#newsbox{
+         margin-left: 10px;
+         width: 580px;
+         height: 370px;
+         margin-bottom: 20px;
+         border-radius: 20px;
+                 box-shadow: 0px 0px 5px 0px #888888;
+
+}
+
 /* Section styles */
 .primary-content {
+    margin-left: 20px;
     display: inline-block;
-    width: 640px;
+    width: 580px;
     float: left;
 }
 
 .sidebar {
     display: inline-block;
-    width: 300;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    width: 120;
     float: right;
 }
 
+
+
 /* Other */
-.events td {
-    width: 150px;
+.video-preview {
+         padding-top: 20px;
+         margin-left: 20px;
+ }
+
+.events {
+        margin-right: 10px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 0px #888888;
+        background-color: #f0ffb3;
+        
+ }
+.events td, tr:nth-of-type(even) {
+        width: 150px;
+        background-color: #f0ffb3;
+        padding-left: 10px;
+
 }
-.events tr:nth-of-type(even) {
-    background: #eee;
-}
+
 h2 {
     font-size: 1.5rem;
+    margin-left: 30px;
+    margin-bottom: 0px;
+
+}
+
+.events h2 {
+        text-align:justify;
+        padding-top: 3px;
+ } 
+
+
+.newsfeed {
+    border-radius: 20px;
+    width: 580px;
+    height: 370px;
+    background-color: #f0ffb3;
 }
 
 .newsfeed li {
-    background: #efefef;
-}
+    margin-left: 10px;
+ }
 
 .footer {
     font-size: 0.8rem;
