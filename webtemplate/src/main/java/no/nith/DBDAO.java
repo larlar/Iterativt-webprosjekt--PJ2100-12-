@@ -55,9 +55,9 @@ public class DBDAO {
 	
 	public List<Users> getUsers(String query) {
 		List<Users> users = new ArrayList<Users>();
-		String url = "jdbc:mysql://localhost/daredigital";
-		String user = "daredig";
-		String password = "D4repass";
+		String url = "jdbc:mysql://mysql.nith.no/larlar12";
+		String user = "larlar12";
+		String password = "larlar12";
 		
 		try {
 			java.sql.Connection connection = DriverManager.getConnection(url, user, password);
