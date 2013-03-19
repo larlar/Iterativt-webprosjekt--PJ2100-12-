@@ -129,8 +129,9 @@ blockquote,address,table,fieldset,figure,pre,
 .sidebar {
     display: inline-block;
 	margin-top: 20px;
-    width: 120;
+    width: 320px;
     float: right;
+    margin-right: 10px;
 }
 
 
@@ -141,14 +142,13 @@ blockquote,address,table,fieldset,figure,pre,
  }
 
 .events {
-        margin-right: 10px;
         border-radius: 7px;
         box-shadow: 0px 0px 5px 0px #919191;
         background-color: #ffffff;
         
  }
 .events td, tr:nth-of-type(even) {
-        width: 150px;
+        width: 320px;
         background-color: #ffffff;
         padding-left: 10px;
 
