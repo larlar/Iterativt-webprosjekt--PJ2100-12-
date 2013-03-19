@@ -178,6 +178,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover{
+	color: #333333;
+}
+
 .events h2 {
         text-align:justify;
 		color: rgb(147,168,3);
