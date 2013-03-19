@@ -34,7 +34,109 @@
 		<div class="primary-content">
         <section id="welcomeHead" class="article">
 			<h1>Dare Teams</h1>
-			
+			<form action="darematchmaking.php" method="get">			
+
+			<select id="roles" name="roles" action="darematchmaking.php">
+			<option value="empty"></option>
+<?php
+            // Dette er en variabel som holder alle tilkoblingsdataene
+ 
+            $connection = mysqli_connect("localhost", "daredig", "D4repass", "daredigital");
+ 
+            //Dette er resultatsettet av en spesiell query
+
+            $result = mysqli_query($connection, "select role from roles") or die (mysqli_error($connection));
+
+            //While-funksjon for å skrive ut resultatet av queriet
+
+            while($row = mysqli_fetch_array($result)) {
+
+            // $row er rader fra søket
+
+            echo "<option> $row[role] </option>";
+         }
+?>
+
+</select>
+<select id="country" name="country">
+<option>All</option>
+<?php
+           // Dette er en variabel som holder alle tilkoblingsdataene
+ 
+            $connection = mysqli_connect("localhost", "daredig", "D4repass", "daredigital");
+ 
+            //Dette er resultatsettet av en spesiell query
+
+            $result = mysqli_query($connection, "select * from countries") or die (mysqli_error($connection));
+
+            //While-funksjon for Ã¥ skrive ut resultatet av queriet
+
+            while($row = mysqli_fetch_array($result)) {
+
+            // $row er rader fra sÃ¸ket
+
+            echo "<option> $row[Country] </option>";
+
+
+            }
+   ?>
+			</select>
+
+<input type="submit">
+</form>
+	
+<?php 
+$connection = mysqli_connect("localhost", "daredig", "D4repass", "daredigital");
+
+if(mysqli_connect_errno()) {
+	echo "Failed to connect " . mysqli_connect_error();
+}
+
+$searchRoles = $_GET['roles'];
+$searchCountry = $_GET['country'];
+
+
+if($searchCountry == "All") {
+	$searchCountry = "";	
+	}
+
+if($searchRole == "empty") {
+	$searchRole = "";	
+	}
+
+
+	
+$query = "select Team_Name, concat(m.firstname, ' ', m.lastname) as Name, r.role as Role
+from teams as t
+left join members as m on m.team_ID = t.team_ID
+join roles as r on r.role_id = m.role_ID
+having team_name not in 
+(
+select Team_name
+from  teams as t
+left join members as m on m.team_ID = t.team_ID
+join roles as r on r.role_ID = m.role_ID
+where r.role like '%$searchRoles%'
+group by team_name
+)
+and team_name in 
+(
+select Team_name
+from  teams as t
+left join members as m on m.team_ID = t.team_ID
+join countries as c on c.country_ID = t.country_ID
+where c.country like '%$searchCountry%'
+group by team_name
+)
+order by Team_Name, role asc";
+
+$results = mysqli_query($connection, $query);
+
+while($row = mysqli_fetch_array($results)) {
+	echo $row['Team_Name'] . ", " . " " . $row['Name'] . " " . $row['Role'] . " " . "<br />"; 
+}
+
+?>			
 		
 		</div><!-- primairy content end-->
 	

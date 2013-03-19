@@ -34,7 +34,132 @@
 		<div class="primary-content">
 		<h1>Dare Members</h1>
 		
-		</div><!-- primairy content end-->
+
+		<form action="daremembers.php" method="get">
+		Firstname: <input type="text" name="firstname" Placeholder="Search">
+		<input type="submit">
+
+
+			<select id="country" name="country">
+			<option>All</option>
+<?php
+           // Dette er en variabel som holder alle tilkoblingsdataene
+ 
+            $connection = mysqli_connect("localhost", "daredig", "D4repass", "daredigital");
+ 
+            //Dette er resultatsettet av en spesiell query
+
+            $result = mysqli_query($connection, "select * from countries") or die (mysqli_error($connection));
+
+            //While-funksjon for å skrive ut resultatet av queriet
+
+            while($row = mysqli_fetch_array($result)) {
+
+            // $row er rader fra søket
+
+            echo "<option> $row[Country] </option>";
+
+
+            }
+   ?>
+</select>
+
+
+<p2>Roles</p2>
+<select id="roles" name="roles" action="daremembers.php">
+<option>All</option>
+
+<?php
+            // Dette er en variabel som holder alle tilkoblingsdataene
+ 
+            $connection = mysqli_connect("localhost", "daredig", "D4repass", "daredigital");
+ 
+            //Dette er resultatsettet av en spesiell query
+
+            $result = mysqli_query($connection, "select role from roles") or die (mysqli_error($connection));
+
+            //While-funksjon for å skrive ut resultatet av queriet
+
+            while($row = mysqli_fetch_array($result)) {
+
+            // $row er rader fra søket
+
+            echo "<option> $row[role] </option>";
+         }
+?>
+
+</select>
+
+<select id="hasteam" name="hasteam" action="daremembers.php">
+Har du lag?
+<option value="empty"></option>
+<option value="yes">Ja</option>
+<option value="no">Nei</option>
+</select>
+
+</form>
+
+
+
+
+<?php 
+$connection = mysqli_connect("localhost", "daredig", "D4repass", "daredigital");
+
+if(mysqli_connect_errno()) {
+	echo "Failed to connect " . mysqli_connect_error();
+}
+
+$hasTeam = $_GET['hasteam'];
+
+$searchCountry = $_GET[country];
+$searchRoles = $_GET[roles];
+$searchResult = trim($_GET[firstname]);
+
+if($_GET[country] == "All" ) {
+	$searchCountry = "";	
+	}
+	
+if($_GET[roles] == "All") {
+	$searchRoles = "";	
+	}	 
+
+
+if($hasTeam == "yes") {
+	$teamSearch = "and t.team_ID is not null";
+	}
+else if($hasTeam == "no") {
+	$teamSearch = "and .team_ID is null";
+	}
+else if($hasTeam == "empty") {
+	$teamSearch = "";	
+	}
+
+	
+
+$query = "select Lastname, Firstname, Email, c.Country, r.Role, t.team_name as Team
+from members as m
+join countries as c on c.Country_ID = m.country_ID
+join roles as r on r.role_id = m.role_id
+left join teams as t on t.team_ID = m.team_ID
+where country like '%$searchCountry%' 
+and r.role like '%$searchRoles%'
+$teamSearch
+and 
+(
+FirstName like '%$searchResult%'
+or lastName like '%$searchResult%'
+or email like '%$searchResult%'
+)";
+
+$results = mysqli_query($connection, $query);
+
+while($row = mysqli_fetch_array($results)) {
+	echo $row['Lastname'] . ", " . " " . $row['Firstname'] . " " . $row['Role'] . " " . "<br />"; 
+}
+
+?>
+	
+		</div><!-- primary content end-->
 	
 	      <div class="sidebar">
 				<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fdarenordic&amp;width=320&amp;height=558&amp;show_faces=true&amp;colorscheme=light&amp;stream=true&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:320px; height:558px;" allowTransparency="true"></iframe>				<div class ="nith_add">
