@@ -81,7 +81,6 @@ table {
  --------------------- */
 #wrapper {
 	width: 960px;
-	height: 1500px;
 	margin: 0 auto;
 	position: relative;
 	background-color: #fff;
@@ -129,9 +128,7 @@ blockquote,address,table,fieldset,figure,pre,
 
 .sidebar {
     display: inline-block;
-    position: absolute;
-    top: 200px;
-    right: 10px;
+	margin-top: 20px;
     width: 120;
     float: right;
 }
@@ -140,7 +137,6 @@ blockquote,address,table,fieldset,figure,pre,
 
 /* Other */
 .video-preview {
-         padding-top: 20px;
          margin-left: 20px;
  }
 
@@ -280,8 +276,9 @@ strong {
 }
 
 .illustration {
-    width: 290px;
+    width: 270px;
     float: right;
+	margin-top: 40px;
 }
 
 /* CONTACT */
