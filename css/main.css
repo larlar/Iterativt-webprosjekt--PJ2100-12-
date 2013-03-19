@@ -273,6 +273,9 @@ strong {
 .illustration {
     width: 270px;
     float: right;
+}
+
+.main .illustration {
 	margin-top: 40px;
 }
 
@@ -282,6 +285,26 @@ strong {
 }
 
 /* ABOUT */
-.benefits ul{
-	background: url(../img/listitem.png) left 5px transparent; //funker ikke
+.benefits li:before {
+	position: aboslute;
+	margin-right: 10px;
+	content: url(../img/listitem.png);
+}
+
+.benefits li {
+	margin-bottom: 5px;
+}
+
+.half-section a {
+    display: inline-block;
+}
+
+.half-section img {
+    max-width: 290px;
+}
+
+.half-section a:first-of-type {
+    margin-right: 10px;
+    padding-right: 9px;
+    border-right: 1px solid #ddd;
 }
