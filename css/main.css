@@ -262,11 +262,6 @@ strong {
 }
 
 /* HOME */
-.test {
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-}
-
 .textsection {
 	width: 290px;
     float: left;
@@ -284,4 +279,9 @@ strong {
 /* CONTACT */
 .contactphoto {
 	float: right;
+}
+
+/* ABOUT */
+.benefits ul{
+	background: url(../img/listitem.png) left 5px transparent; //funker ikke
 }
