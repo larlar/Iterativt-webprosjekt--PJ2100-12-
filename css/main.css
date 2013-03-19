@@ -283,3 +283,8 @@ strong {
     width: 290px;
     float: right;
 }
+
+/* CONTACT */
+.contactphoto {
+	float: right;
+}
