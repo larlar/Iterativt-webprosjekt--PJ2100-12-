@@ -27,15 +27,19 @@
 						<tr>
 							<th>Lastname</th>
 							<th>Firstname</th>
+							<th>Email</th>
 							<th>Role</th>
 							<th>Team</th>
+							<th>Country</th>
 						</tr>
 						<?php 
 							//Prints the results from the searchfunction query, based on values from the search boxes
 							include ('PHP/search/searchfunction.php');
 							
 							while($row = mysqli_fetch_array($results)) {
-								echo "<tr><td>" . $row['Lastname'] . "</td><td>" . " " . $row['Firstname'] . "</td><td>" . $row['Role'] . "</td><td>" . $row['Team'] . "</td></tr>"; 
+								echo "<tr><td>" . $row['Lastname'] . "</td><td>" . $row['Firstname'] . "</td><td>" 
+								. $row['Email'] . "</td><td>" . $row['Role'] . "</td><td>" . $row['Team'] . "</td><td>" . $row['Country']
+								. "</td></tr>"; 
 							}
 						?>
 					</table>	
