@@ -45,13 +45,19 @@
 
 <input type="submit">
 </form>
-	
+<table class="searchoutput">
+	<tr>
+		<th>Lastname</th>
+		<th>Firstname</th>
+		<th>Role</th>
+		<th>Team</th>
+	</tr>	
 <?php 
 	//Prints the results from the matchmaking query based on the values in the dropdown lists
 	include ('PHP/search/matchmaking.php');
 	
 	while($row = mysqli_fetch_array($results)) {
-		echo $row['Team_Name'] . ", " . " " . $row['Name'] . " " . $row['Role'] . " " . "<br />"; 
+		echo "<tr><td>" . $row['Team_Name'] . "</td><td>" . $row['Name'] . "</td><td>" . $row['Role'] . "</td></tr>"; 
 	}
 ?>			
 		

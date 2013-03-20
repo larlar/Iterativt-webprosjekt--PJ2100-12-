@@ -57,7 +57,7 @@ Har du lag?
 </select>
 
 </form>
-<table class="memberoutput">
+<table class="searchoutput">
 	<tr>
 		<th>Lastname</th>
 		<th>Firstname</th>
