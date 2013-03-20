@@ -73,16 +73,7 @@ Har du lag?
 		}
 	?>
 	</table>	
-		</div><!-- primary content end-->
-	
-	      <div class="sidebar">
-					<div class ="nith_add">
-					<img src="img/nithbutton.jpg" alt="NITH add">
-				</div>
-				<div class="dareinternational_add">
-					<img src="img/dareint.jpg" alt="Dare international add">
-				</div>
-			</div><!-- sidebar end -->	
+		</div><!-- primary content end-->	
 	</div><!-- content end -->
 	</div><!-- wrapper end -->
 	
