@@ -5,15 +5,15 @@
 		echo "Failed to connect " . mysqli_connect_error();
 	}
 	
-	$searchRoles = $_GET['roles'];
-	$searchCountry = $_GET['country'];
+	$searchRoles = $_GET[roles];
+	$searchCountry = $_GET[country];
 
 
-	if($searchCountry == "All") {
+	if($_GET[country] == "All") {
 		$searchCountry = "";	
 		}
 
-	if($searchRole == "empty") {
+	if($_GET[roles] == "empty") {
 		$searchRole = "";	
 		}
 

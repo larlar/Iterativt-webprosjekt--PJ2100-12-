@@ -5,8 +5,7 @@
 			<div class="primary-content">
 				<h1>Dare Members</h1>
 					<form action="daremembers.php" method="get">
-						Firstname: <input type="text" name="textValue" Placeholder="Search">
-						<input type="submit">
+						<p2>Firstname:</p2> <input type="text" name="textValue" Placeholder="Search">
 						<select id="country" name="country">
 							<option>All</option>
 								<?php include ('PHP/Dropdown/countries.php');?>
@@ -18,11 +17,11 @@
 								<?php include ('PHP/Dropdown/roles.php');?>
 						</select>
 						<select id="hasteam" name="hasteam" action="daremembers.php">
-							Har du lag?
 							<option value="empty"></option>
 							<option value="yes">Yes</option>
 							<option value="no">No</option>
 						</select>
+						<input type="submit">
 					</form>
 					<table class="searchoutput">
 						<tr>

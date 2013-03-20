@@ -5,8 +5,7 @@
 		echo "Failed to connect " . mysqli_connect_error();
 	}
 
-	$hasTeam = $_GET['hasteam'];
-
+	$hasTeam = $_GET[hasteam];
 	$searchCountry = $_GET[country];
 	$searchRoles = $_GET[roles];
 	$searchResult = trim($_GET[textValue]);
