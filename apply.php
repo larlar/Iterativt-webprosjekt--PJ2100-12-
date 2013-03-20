@@ -1,23 +1,4 @@
-﻿<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="UTF-8">
-    <title>Apply</title>
-	<link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
-<!-- Content wrapper -->
-    <div id="wrapper">
-<!-- Banner Top -->
-		<header id="top">
-			<div><a href="index.html"><img src="img/header_nordic1.jpg" alt="banner top"/></a></div>
-		</header>
-<!-- navi menue top -->
-		<div class="navi-top cf">
-			<?php
-				include ('PHP/navigation/navi-bar.php');
-			?>
-		</div>
+﻿<?php include("header.php") ?>
 		<!-- content holder -->	
 		<div class="content cf">
 			<!-- primary-content holder -->

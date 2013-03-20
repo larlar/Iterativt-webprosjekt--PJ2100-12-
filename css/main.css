@@ -69,6 +69,7 @@ table {
 #top {
     width: 100%;
     font-size: 0;
+	position: relevant;
 }
 #top > div {
     margin: 0 auto;
@@ -76,6 +77,26 @@ table {
 #top > div > img {
     height: 132px;
 }
+
+.flag {
+	position: absolute;
+	top: 100px;
+	display: block;
+	width: 30px;
+	height: 20px;
+	z-index: 2;
+}
+	.eng {
+		background: url("../img/flag_uk.png");
+		background-size: 100%;
+		right: 185px
+	}
+	.nor {
+		background: url("../img/flag_nor.png");
+		background-size: 100%;
+		right: 150px;
+	}
+	
 /* ---------------------
     MAIN CONTENT/Layout
  --------------------- */
