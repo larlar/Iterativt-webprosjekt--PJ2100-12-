@@ -360,4 +360,5 @@ strong {
 	padding-right: 2px;
 	text-align: left;
 	font-weight: bold;
+	min-width: 80px;
 }
