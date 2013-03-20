@@ -27,7 +27,7 @@
 		
 
 		<form action="daremembers.php" method="get">
-		Firstname: <input type="text" name="firstname" Placeholder="Search">
+		Firstname: <input type="text" name="textValue" Placeholder="Search">
 		<input type="submit">
 
 
