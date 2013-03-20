@@ -166,24 +166,21 @@ blockquote,address,table,fieldset,figure,pre,
     margin-right: 10px;
 }
 
-
-
 /* Other */
 .video-preview {
          margin-left: 20px;
- }
+}
 
 .events {
         border-radius: 7px;
         box-shadow: 0px 0px 5px 0px #919191;
-        background-color: #eee;
-        
- }
+        background-color: #eee;     
+}
+
 .events td, tr:nth-of-type(even) {
         width: 320px;
         background-color: #eee;
         padding-left: 10px;
-
 }
 
 h2 {
@@ -191,7 +188,6 @@ h2 {
     margin-left: 30px;
     margin-bottom: 0px;
 	color: rgb(147,168,3);
-
 }
 
 h1 {
@@ -214,8 +210,7 @@ a:hover{
         text-align:justify;
 		color: rgb(147,168,3);
         padding-top: 3px;
- } 
-
+} 
 
 .newsfeed {
     border-radius: 20px;
@@ -226,7 +221,7 @@ a:hover{
 
 .newsfeed li {
     margin-left: 10px;
- }
+}
 
 .footer {
     font-size: 0.8rem;
