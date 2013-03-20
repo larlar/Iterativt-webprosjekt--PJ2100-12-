@@ -16,18 +16,9 @@
 
 <!-- navi menue top -->
 	<div class="navi-top cf">
-    <ul>
-        <li class="navi-object Home"><a href="index.html">Home</a></li>
-        <li class="navi-object About"><a href="about.html">About</a></li>
-        <li class="navi-object Apply"><a href="apply.html">Apply</a></li>
-		<li class="navi-object Dare Members"><a href="daremembers.php">Dare Members</a></li>
-		<li class="navi-object Dare Matchmaking"><a href="darematchmaking.php">Dare Matchmaking</a></li>
-		<li class="navi-object Contact"><a href="contact.html">Contact</a></li>
-        <li class="search"><form >
-            <input type="text" />
-                <button class="submit">Go</button>
-        </form></li>
-    </ul>
+	<?php
+		include ('PHP/navigation/navi-bar.php');
+	?>
 </div>
 	
 	<div class="content cf">
@@ -56,7 +47,12 @@
 </form>
 	
 <?php 
-	include ('PHP/matchmaking.php');
+	//Prints the results from the matchmaking query based on the values in the dropdown lists
+	include ('PHP/search/matchmaking.php');
+	
+	while($row = mysqli_fetch_array($results)) {
+		echo $row['Team_Name'] . ", " . " " . $row['Name'] . " " . $row['Role'] . " " . "<br />"; 
+	}
 ?>			
 		
 		</div><!-- primairy content end-->

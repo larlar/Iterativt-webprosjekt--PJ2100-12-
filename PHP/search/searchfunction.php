@@ -9,7 +9,7 @@
 
 	$searchCountry = $_GET[country];
 	$searchRoles = $_GET[roles];
-	$searchResult = trim($_GET[firstname]);
+	$searchResult = trim($_GET[textValue]);
 
 	if($_GET[country] == "All" ) {
 		$searchCountry = "";	
@@ -49,9 +49,5 @@
 	)";
 
 	$results = mysqli_query($connection, $query);
-
-	while($row = mysqli_fetch_array($results)) {
-		echo $row['Lastname'] . ", " . " " . $row['Firstname'] . " " . $row['Role'] . " " . $row['Team'] . "<br />"; 
-	}
-
+		
 ?>
