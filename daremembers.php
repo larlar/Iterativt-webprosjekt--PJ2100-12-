@@ -57,16 +57,22 @@ Har du lag?
 </select>
 
 </form>
-
-<?php 
-	//Prints the results from the searchfunction query, based on values from the search boxes
-	include ('PHP/search/searchfunction.php');
-	
-	while($row = mysqli_fetch_array($results)) {
-		echo $row['Lastname'] . ", " . " " . $row['Firstname'] . " " . $row['Role'] . " " . $row['Team'] . "<br />"; 
-	}
-?>
-	
+<table class="memberoutput">
+	<tr>
+		<th>Lastname</th>
+		<th>Firstname</th>
+		<th>Role</th>
+		<th>Team</th>
+	</tr>
+	<?php 
+		//Prints the results from the searchfunction query, based on values from the search boxes
+		include ('PHP/search/searchfunction.php');
+		
+		while($row = mysqli_fetch_array($results)) {
+			echo "<tr><td>" . $row['Lastname'] . "</td><td>" . " " . $row['Firstname'] . "</td><td>" . $row['Role'] . "</td><tr>" . $row['Team'] . "</td></tr>"; 
+		}
+	?>
+	</table>	
 		</div><!-- primary content end-->
 	
 	      <div class="sidebar">
