@@ -14,13 +14,13 @@
     <div id="wrapper">
 <!-- Banner Top -->
 		<header id="top">
-			<div><a href="index.php"><img src="img/header_nordic1.jpg" alt="banner top"/></a></div>
+			<div><a href="index-nor.php"><img src="img/header_nordic1.jpg" alt="banner top"/></a></div>
 			<a href="index.php" class="flag eng"></a>
 			<a href="index-nor.php" class="flag nor"></a>
 		</header>
 <!-- navi menue top -->
 		<div class="navi-top cf">
 			<?php
-				include ('PHP/navigation/navi-bar.php');
+				include ('PHP/navigation/navi-bar-nor.php');
 			?>
 		</div>

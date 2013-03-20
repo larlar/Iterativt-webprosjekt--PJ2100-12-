@@ -1,4 +1,4 @@
-﻿<?php include("header.php") ?>
+﻿<?php include("header-nor.php") ?>
 		<!-- content holder -->	
 		<div class="content cf">
 			<!-- primary-content holder -->
