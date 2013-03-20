@@ -60,7 +60,7 @@
 		echo "<tr><td>" . $row['Team_Name'] . "</td><td>" . $row['Name'] . "</td><td>" . $row['Role'] . "</td></tr>"; 
 	}
 ?>			
-		
+	</table>	
 		</div><!-- primairy content end-->
 	
 	      <div class="sidebar">
