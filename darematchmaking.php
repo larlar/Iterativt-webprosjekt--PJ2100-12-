@@ -47,10 +47,9 @@
 </form>
 <table class="searchoutput">
 	<tr>
-		<th>Lastname</th>
-		<th>Firstname</th>
-		<th>Role</th>
 		<th>Team</th>
+		<th>Name</th>
+		<th>Role</th>
 	</tr>	
 <?php 
 	//Prints the results from the matchmaking query based on the values in the dropdown lists

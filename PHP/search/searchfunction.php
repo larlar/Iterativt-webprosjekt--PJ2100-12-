@@ -24,7 +24,7 @@
 		$teamSearch = "and t.team_ID is not null";
 		}
 	else if($hasTeam == "no") {
-		$teamSearch = "and .team_ID is null";
+		$teamSearch = "and t.team_ID is null";
 		}
 	else if($hasTeam == "empty") {
 		$teamSearch = "";	

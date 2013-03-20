@@ -52,8 +52,8 @@
 <select id="hasteam" name="hasteam" action="daremembers.php">
 Har du lag?
 <option value="empty"></option>
-<option value="yes">Ja</option>
-<option value="no">Nei</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
 </select>
 
 </form>
@@ -69,7 +69,7 @@ Har du lag?
 		include ('PHP/search/searchfunction.php');
 		
 		while($row = mysqli_fetch_array($results)) {
-			echo "<tr><td>" . $row['Lastname'] . "</td><td>" . " " . $row['Firstname'] . "</td><td>" . $row['Role'] . "</td><tr>" . $row['Team'] . "</td></tr>"; 
+			echo "<tr><td>" . $row['Lastname'] . "</td><td>" . " " . $row['Firstname'] . "</td><td>" . $row['Role'] . "</td><td>" . $row['Team'] . "</td></tr>"; 
 		}
 	?>
 	</table>	
