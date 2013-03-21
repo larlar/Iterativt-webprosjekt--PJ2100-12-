@@ -3,21 +3,23 @@
 			<div class="primary-content">
 				<h1>Dare Matchmaking</h1>
 				<form action="darematchmaking-nor.php" method="get">			
-					<select id="roles" name="roles" action="darematchmaking-nor.php">
-						<option value="empty">Rolle</option>
-						<?php
-							//Makes a dropdown list based on roles in the MySQL database
-							include ('PHP/Dropdown/roles.php');
-						?>
-					</select>
-					<select id="country" name="country">
-						<option value="All">Alle land</option>
-						<?php
-							//Makes a dropdown list based on countires in the MySQL database
-							include ('PHP/Dropdown/countries.php');
-						?>
-					</select>
-					<button type="submit" class="submit">Søk</button>
+					<p>Jeg er en: 
+						<select id="roles" name="roles" action="darematchmaking-nor.php">
+							<option value="empty">Rolle</option>
+							<?php
+								//Makes a dropdown list based on roles in the MySQL database
+								include ('PHP/Dropdown/roles.php');
+							?>
+						</select>
+						som ser etter et lag fra:
+							<select id="country" name="country">
+								<option value="All">Alle land</option>
+								<?php
+									//Makes a dropdown list based on countires in the MySQL database
+									include ('PHP/Dropdown/countries.php');
+								?>
+							</select>
+							<button type="submit" class="submit">Søk</button></p>
 				</form>
 				<table class="searchoutput">
 					<tr>

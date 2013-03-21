@@ -3,21 +3,23 @@
 			<div class="primary-content">
 				<h1>Dare Teams</h1>
 				<form action="darematchmaking.php" method="get">			
-					<select id="roles" name="roles" action="darematchmaking.php">
-						<option value="empty">Role</option>
-						<?php
-							//Makes a dropdown list based on roles in the MySQL database
-							include ('PHP/Dropdown/roles.php');
-						?>
-					</select>
-					<select id="country" name="country">
-						<option value="All">All Countries</option>
-						<?php
-							//Makes a dropdown list based on countires in the MySQL database
-							include ('PHP/Dropdown/countries.php');
-						?>
-					</select>
-					<button type="submit" class="submit">Search</button>
+					<p>I'm a: 
+						<select id="roles" name="roles" action="darematchmaking.php">
+							<option value="empty">Role</option>
+							<?php
+								//Makes a dropdown list based on roles in the MySQL database
+								include ('PHP/Dropdown/roles.php');
+							?>
+						</select>
+						looking for a Team from: 
+						<select id="country" name="country">
+							<option value="All">All Countries</option>
+							<?php
+								//Makes a dropdown list based on countires in the MySQL database
+								include ('PHP/Dropdown/countries.php');
+							?>
+						</select>
+						<button type="submit" class="submit">Search</button></p>
 				</form>
 				<table class="searchoutput">
 					<tr>
