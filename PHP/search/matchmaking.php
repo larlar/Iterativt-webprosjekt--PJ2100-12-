@@ -22,7 +22,7 @@
 	$query = "select Team_Name, concat(m.FirstName, ' ', m.LastName) as Name, r.Role as Role
 	from teams as t
 	left join members as m on m.team_ID = t.Team_ID
-	join Roles as r on r.Role_ID = m.role_ID
+	join roles as r on r.Role_ID = m.role_ID
 	having Team_Name not in 
 	(
 	select Team_name
