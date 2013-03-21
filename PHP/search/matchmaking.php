@@ -19,29 +19,29 @@
 
 
 		
-	$query = "select Team_Name, concat(m.firstname, ' ', m.lastname) as Name, r.role as Role
+	$query = "select Team_Name, concat(m.FirstName, ' ', m.LastName) as Name, r.Role as Role
 	from teams as t
-	left join members as m on m.team_ID = t.team_ID
-	join roles as r on r.role_id = m.role_ID
-	having team_name not in 
+	left join members as m on m.team_ID = t.Team_ID
+	join Roles as r on r.Role_ID = m.role_ID
+	having Team_Name not in 
 	(
 	select Team_name
 	from  teams as t
-	left join members as m on m.team_ID = t.team_ID
-	join roles as r on r.role_ID = m.role_ID
-	where r.role like '%$searchRoles%'
-	group by team_name
+	left join members as m on m.team_ID = t.Team_ID
+	join roles as r on r.Role_ID = m.role_ID
+	where r.Role like '%$searchRoles%'
+	group by Team_Name
 	)
-	and team_name in 
+	and Team_Name in 
 	(
 	select Team_name
 	from  teams as t
-	left join members as m on m.team_ID = t.team_ID
-	join countries as c on c.country_ID = t.country_ID
-	where c.country like '%$searchCountry%'
-	group by team_name
+	left join members as m on m.team_ID = t.Team_ID
+	join countries as c on c.Country_ID = t.Country_ID
+	where c.Country like '%$searchCountry%'
+	group by Team_Name
 	)
-	order by Team_Name, role asc";
+	order by Team_Name, Role asc";
 
 	$results = mysqli_query($connection, $query);
 

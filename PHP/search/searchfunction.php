@@ -31,20 +31,20 @@
 
 		
 
-	$query = "select Lastname, Firstname, Email, c.Country, r.Role, t.team_name as Team
+	$query = "select LastName as Lastname, FirstName as Firstname, Email, c.Country as Country, r.Role as Role, t.Team_Name as Team
 	from members as m
 	join countries as c on c.Country_ID = m.country_ID
-	join roles as r on r.role_id = m.role_id
-	left join teams as t on t.team_ID = m.team_ID
-	where country like '%$searchCountry%' 
-	and r.role like '%$searchRoles%'
+	join roles as r on r.role_ID = m.Role_ID
+	left join teams as t on t.Team_ID = m.team_ID
+	where Country like '%$searchCountry%' 
+	and Role like '%$searchRoles%'
 	$teamSearch
 	and 
 	(
-	FirstName like '%$searchResult%'
-	or lastName like '%$searchResult%'
-	or email like '%$searchResult%'
-	or t.team_Name like '%$searchResult%'
+	Firstname like '%$searchResult%'
+	or Lastname like '%$searchResult%'
+	or Email like '%$searchResult%'
+	or Team like '%$searchResult%'
 	)";
 
 	$results = mysqli_query($connection, $query);
