@@ -4,7 +4,7 @@
 				<h1>Dare Teams</h1>
 				<form action="darematchmaking.php" method="get">			
 					<select id="roles" name="roles" action="darematchmaking.php">
-						<option value="empty">All Roles</option>
+						<option value="empty">Role</option>
 						<?php
 							//Makes a dropdown list based on roles in the MySQL database
 							include ('PHP/Dropdown/roles.php');
@@ -24,13 +24,14 @@
 						<th>Team</th>
 						<th>Name</th>
 						<th>Role</th>
+						<th>Email</th>
 					</tr>	
 					<?php 
 						//Prints the results from the matchmaking query based on the values in the dropdown lists
 						include ('PHP/search/matchmaking.php');
 						
 						while($row = mysqli_fetch_array($results)) {
-							echo "<tr><td>" . $row['Team_Name'] . "</td><td>" . $row['Name'] . "</td><td>" . $row['Role'] . .$row['Email'] . "</td></tr>"; 
+							echo "<tr><td>" . $row['Team_Name'] . "</td><td>" . $row['Name'] . "</td><td>" . $row['Role'] . $row['Email'] . "</td></tr>"; 
 						}
 					?>			
 				</table>	
