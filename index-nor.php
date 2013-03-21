@@ -40,10 +40,10 @@
 					<!-- text holder, containing a middle boarder divinding text and pictures in two sections -->
 					<div class="textholder cf main">
 						<div class="textsection">	
-							<p>Students or graduates from the Nordic countries will compete against each other in a Nordic subsection of the competition. Teams need to include a video pitch of the game concept when they are applying to the Nordic competition. The videos will be judged online and if you’re team get selected to attend the interview day, this will take place at NITH in Oslo, Norway.</p>
+							<p>Studenter eller nylig bachelor studenter fra de Nordiske landende vil konkurrere mot hverandre i en Nordisk del av Dare to be Digital konkurransen. Lagene må legge ved en liten video snutt av deres spill konsept, når de melder seg på den Nordiske konkurransen. Video ideen vil bli vurdert av dommerne på nett, og vil plukke ut noen lag som vil bli innkalt til en intervju dag som vil ta plass på NITH i Oslo, Norge.</p>
 						</div>
 						<div class="illustration2">
-							<p>The winner of the Nordic competition will be announced at the winning ceremonies, which will be hosted may 15. at NITH in Oslo, Norway. So, what is the price for the Nordic winner of the competition? The Nordic winner will get all travel expenses covered and weekly salary throughout all of the 9 weeks, while they are developing the game in Dundee, Scotland.</p>
+							<p>Vinneren av den Nordiske konkurransen vil bli offentligjort under kåringen av den Nordiske vinneren som vil finne sted den 15. mai, på NITH i Oslo, Norge. Så hva er prisen til den Nordiske vinneren av konkurransen? Den Nordiske vinneren vil få alle reisekostnader dekket for å reise til Dundee, Skottland. I tillegg til dette vil laget også få en ukentlig lønn gjennom alle de 9 ukene de er i Skottland for å utvikle spille konseptet sitt.</p>
 						</div>
 					</div><!-- end of text holder -->	
 						<a href="http://www.daretobedigital.com/d2bd/login-or-register/login.php?accesscheck=apply-2013"><img src="img/applynowsmall.jpg" alt="apply now"></a>
