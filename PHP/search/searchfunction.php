@@ -8,7 +8,7 @@
 	$hasTeam = $_GET['hasteam'];
 	$searchCountry = $_GET['country'];
 	$searchRoles = $_GET['roles'];
-	$searchResult = trim($_GET[textValue]);
+	$searchResult = trim($_GET['textValue']);
 
 	if($_GET[country] == "All" ) {
 		$searchCountry = "";	
