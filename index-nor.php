@@ -63,11 +63,11 @@
 							</tr>
 							<tr>
 								<td>Intervjuer</td>
-								<td>29 Apr - 9 May</td>
+								<td>29 Apr - 9 Mai</td>
 							</tr>
 							<tr>
 								<td>Kåring av Nordisk vinner på NITH</td><!-- byttet ut "it req" skal denne tas med? -->
-								<td>15 May</td>
+								<td>15 Mai</td>
 							</tr>
 							<tr>
 								<td>Konkurranse datoer</td>
