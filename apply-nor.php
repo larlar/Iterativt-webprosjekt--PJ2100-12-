@@ -3,7 +3,7 @@
 		<div class="content cf">
 			<!-- primary-content holder -->
 			<div class="primary-content"> 
-				<h1>Hoordan melde seg inn - Nordiske land</h1>
+				<h1>Hvordan melde seg inn - Nordiske land</h1>
 					<a href="http://www.daretobedigital.com/d2bd/login-or-register/login.php?accesscheck=apply-2013"><img src="img/apply-button.gif" alt="apply now"/></a>
 						<p><strong>(Mulighet for å bli finansiert)</strong></p>
 						<p><strong>Norge, Finland, Danmark, Island eller Sverige</strong></p>
