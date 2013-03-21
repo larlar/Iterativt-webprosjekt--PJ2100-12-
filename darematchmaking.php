@@ -31,7 +31,7 @@
 						include ('PHP/search/matchmaking.php');
 						
 						while($row = mysqli_fetch_array($results)) {
-							echo "<tr><td>" . $row['Team_Name'] . "</td><td>" . $row['Name'] . "</td><td>" . $row['Role'] . $row['Email'] . "</td></tr>"; 
+							echo "<tr><td>" . $row['Team_Name'] . "</td><td>" . $row['Name'] . "</td><td>" . $row['Role'] . "</td><td>" . $row['Email'] . "</td></tr>"; 
 						}
 					?>			
 				</table>	

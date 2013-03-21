@@ -19,7 +19,7 @@
 
 
 		
-	$query = "select Team_Name, concat(m.FirstName, ' ', m.LastName) as Name, r.Role as Role
+	$query = "select Team_Name, concat(m.FirstName, ' ', m.LastName) as Name, r.Role as Role, m.Email
 	from teams as t
 	left join members as m on m.team_ID = t.Team_ID
 	join roles as r on r.Role_ID = m.role_ID
