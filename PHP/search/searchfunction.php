@@ -47,6 +47,7 @@
 	or Email like '%$searchResult%'
 	or t.Team_Name like '%$searchResult%'
 	or r.Role like '%$searchResult%'
+	or c.Country like '%$searchResult%'
 	)";
 
 	$results = mysqli_query($connection, $query);
