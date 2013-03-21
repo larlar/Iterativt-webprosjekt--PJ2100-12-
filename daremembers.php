@@ -4,23 +4,23 @@
 		<!-- primary content -->
 			<h1>Dare Members</h1>
 				<form action="daremembers.php" method="get">
-					<p2>Firstname:</p2> <input type="text" name="textValue" Placeholder="Search">
+					<p></p><input type="text" name="textValue" Placeholder="Search">
 					<select id="country" name="country">
-						<option>All</option>
+						<option value="All">All Countries</option>
 							<?php include ('PHP/Dropdown/countries.php');?>
 					</select>
 							
-					<p2>Roles</p2>
+					
 					<select id="roles" name="roles" action="daremembers.php">
-						<option>All</option>
+						<option value="All">All Roles</option>
 							<?php include ('PHP/Dropdown/roles.php');?>
 					</select>
 					<select id="hasteam" name="hasteam" action="daremembers.php">
-						<option value="empty"></option>
+						<option value="empty">Has Team</option>
 						<option value="yes">Yes</option>
 						<option value="no">No</option>
 					</select>
-					<input type="submit">
+					<button type="submit" class="submit">Search</button>
 				</form>
 				<table class="searchoutput">
 					<tr>
