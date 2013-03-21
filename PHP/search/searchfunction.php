@@ -44,7 +44,7 @@
 	Firstname like '%$searchResult%'
 	or Lastname like '%$searchResult%'
 	or Email like '%$searchResult%'
-	or Team like '%$searchResult%'
+	or t.Team_Name like '%$searchResult%'
 	)";
 
 	$results = mysqli_query($connection, $query);

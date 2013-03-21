@@ -3,11 +3,11 @@
 	include ('PHP/Database/DBConnection.php');
 
 	//Dette er resultatsettet av en spesiell query
-	$result = mysqli_query($connection, "select role from roles") or die (mysqli_error($connection));
+	$result = mysqli_query($connection, "select Role from roles") or die (mysqli_error($connection));
 	
 	//While-funksjon for å skrive ut resultatet av queriet
 	while($row = mysqli_fetch_array($result)) {
 	// $row er rader fra søket
-		echo "<option> $row[role] </option>";
+		echo "<option> $row[Role] </option>";
 	 }
 ?>
