@@ -1,6 +1,7 @@
 <?php 
-	include ('PHP/Database/DBConnection.php');
-
+		
+	include ('PHP/Database/DBconnection.php');
+	
 	if(mysqli_connect_errno()) {
 		echo "Failed to connect " . mysqli_connect_error();
 	}
@@ -10,11 +11,11 @@
 	$searchRoles = $_GET['roles'];
 	$searchResult = trim($_GET['textValue']);
 
-	if($_GET[country] == "All" ) {
+	if($_GET['country'] == "All" ) {
 		$searchCountry = "";	
 		}
 		
-	if($_GET[roles] == "All") {
+	if($_GET['roles'] == "All") {
 		$searchRoles = "";	
 		}	 
 
@@ -45,6 +46,7 @@
 	or Lastname like '%$searchResult%'
 	or Email like '%$searchResult%'
 	or t.Team_Name like '%$searchResult%'
+	or r.Role like '%$searchResult%'
 	)";
 
 	$results = mysqli_query($connection, $query);

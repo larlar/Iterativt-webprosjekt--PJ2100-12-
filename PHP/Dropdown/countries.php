@@ -1,6 +1,6 @@
 <?php
    // Henter ut MySQL tilkoblings detaljer i form av en variabel ved navn: $connection
-	include ('PHP/Database/DBConnection.php');
+	include ('PHP/Database/DBconnection.php');
 
 	//Dette er resultatsettet av en spesiell query
 	$result = mysqli_query($connection, "select * from countries") or die (mysqli_error($connection));
