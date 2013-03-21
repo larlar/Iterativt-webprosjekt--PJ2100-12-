@@ -1,7 +1,7 @@
 For å installere databasen på en server installere IIS (Internet Information Services) og PHP på serveren.
 For en guide på dette, følg det som er skrevet i dokumentet Utrulling av php. Det er en detaljert beskrivelse på hvordan man installerer IIS og PHP og deretter legger til php løsningen til serveren og hvordan man får det til å kjøre.
 
-
+For å endre passord, database navn og brukernavn, så må man åpne dbconnection.php i f.eks Notepad og deretter lagre.
 
 Databasenavn: daredigital
 
