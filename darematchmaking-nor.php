@@ -2,8 +2,8 @@
 		<div class="content cf">
 			<div class="primary-content">
 				<h1>Dare Matchmaking</h1>
-				<form action="darematchmaking.php" method="get">			
-					<select id="roles" name="roles" action="darematchmaking.php">
+				<form action="darematchmaking-nor.php" method="get">			
+					<select id="roles" name="roles" action="darematchmaking-nor.php">
 						<option value="empty">Rolle</option>
 						<?php
 							//Makes a dropdown list based on roles in the MySQL database

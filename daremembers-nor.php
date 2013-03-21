@@ -3,7 +3,7 @@
 		<div class="content cf">
 		<!-- primary content -->
 			<h1>Dare Medlemmer</h1>
-				<form action="daremembers.php" method="get">
+				<form action="daremembers-nor.php" method="get">
 					<p></p><input type="text" name="textValue" Placeholder="Search">
 					<select id="country" name="country">
 						<option value="All">Alle land</option>
@@ -11,11 +11,11 @@
 					</select>
 							
 					
-					<select id="roles" name="roles" action="daremembers.php">
+					<select id="roles" name="roles" action="daremembers-nor.php">
 						<option value="All">Alle Roller</option>
 							<?php include ('PHP/Dropdown/roles.php');?>
 					</select>
-					<select id="hasteam" name="hasteam" action="daremembers.php">
+					<select id="hasteam" name="hasteam" action="daremembers-nor.php">
 						<option value="empty">Har Lag</option>
 						<option value="yes">Ja</option>
 						<option value="no">Nei</option>
