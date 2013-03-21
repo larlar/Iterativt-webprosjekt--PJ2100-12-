@@ -19,10 +19,11 @@
 
 
 		
-	$query = "select Team_Name, concat(m.FirstName, ' ', m.LastName) as Name, r.Role as Role, m.Email
+	$query = "select Team_Name, concat(m.FirstName, ' ', m.LastName) as Name, r.Role as Role, m.Email, c.Country
 	from teams as t
 	left join members as m on m.team_ID = t.Team_ID
 	join roles as r on r.Role_ID = m.role_ID
+	join countries as c on c.Country_ID = m.country_ID
 	having Team_Name not in 
 	(
 	select Team_name
