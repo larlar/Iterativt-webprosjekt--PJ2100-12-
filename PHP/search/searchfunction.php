@@ -48,7 +48,8 @@
 	or t.Team_Name like '%$searchResult%'
 	or r.Role like '%$searchResult%'
 	or c.Country like '%$searchResult%'
-	)";
+	)
+	order by Lastname asc";
 
 	$results = mysqli_query($connection, $query);
 		
